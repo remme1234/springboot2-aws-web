@@ -7,7 +7,7 @@ buildscript {
         // 각존 의존성 (라이브러리)들을 어떤 원격 저장소에서 받을지 정한다.
         // 기본적으로 mavenCentral 을 사용하나 라이브러리 업로드 난이도 때문에 jcenter도 이용
         mavenCentral()
-        jcenter()
+       // jcenter()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -20,14 +20,14 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-group 'org.example'
+group 'com.remme'
 version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 // 각존 의존성들을 어떤 원격 저장소에서 받을지 정한다.
 repositories {
     mavenCentral()
-    jcenter()
+    // jcenter()
 }
 
 // 프로젝트 개발에 필요한 의존성들을 선언하는 곳이다.
@@ -36,15 +36,5 @@ repositories {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.projectlombok:lombok')
-    compile('org.springframework.boot:spring-boot-starter-data-jpa')
-    compile('org.springframework.boot:spring-boot-starter-mustache')
-    compile('com.h2database:h2')
-
-    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
-    compile('org.springframework.session:spring-session-jdbc')
-
-    compile("org.mariadb.jdbc:mariadb-java-client")
-
     testCompile('org.springframework.boot:spring-boot-starter-test')
-    testCompile("org.springframework.security:spring-security-test")
 }
