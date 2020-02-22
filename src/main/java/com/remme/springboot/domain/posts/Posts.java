@@ -18,7 +18,7 @@ import javax.persistence.*;
 @Entity
 // Posts 클래스는 실제 DB테이블과 매칭될 클래스, Entity 클래스라고 한다.
 // JPA 를 사용하면 DB 데이터에 작업할 경우 실제 쿼리를 날리기보다는 이 클래스의 수정을 통해서 작업한다.
-public class Posts {
+public class Posts extends BaseTimeEntitiy {
 
     // PK
     @Id
@@ -43,4 +43,8 @@ public class Posts {
         this.author = author;
     }
 
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
 }
