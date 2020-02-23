@@ -1,4 +1,4 @@
-package com.remme.springboot.dto;
+package com.remme.springboot.config.auth.dto;
 
 import com.remme.springboot.web.dto.HelloResponseDto;
 import static  org.assertj.core.api.Assertions.assertThat;
