@@ -47,6 +47,8 @@ dependencies {
     // 소셜 로그인 등 클라이언트입장에서 소셜기능구현시 필요한의존성
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')
 
+    // 스프링 세션 jdbc 등록
+    compile('org.springframework.session:spring-session-jdbc')
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
 
