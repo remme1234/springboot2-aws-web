@@ -7,7 +7,7 @@ buildscript {
         // 각존 의존성 (라이브러리)들을 어떤 원격 저장소에서 받을지 정한다.
         // 기본적으로 mavenCentral 을 사용하나 라이브러리 업로드 난이도 때문에 jcenter도 이용
         mavenCentral()
-       // jcenter()
+        jcenter()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -27,7 +27,7 @@ sourceCompatibility = 1.8
 // 각존 의존성들을 어떤 원격 저장소에서 받을지 정한다.
 repositories {
     mavenCentral()
-    // jcenter()
+    jcenter()
 }
 
 // 프로젝트 개발에 필요한 의존성들을 선언하는 곳이다.
@@ -50,9 +50,9 @@ dependencies {
     // 스프링 세션 jdbc 등록
     compile('org.springframework.session:spring-session-jdbc')
 
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile("org.mariadb.jdbc:mariadb-java-client")
+
     // 스프링 시큐리티 테스트를 위한 여러 도구를 지원하는 spring-security-test를 추가한다
-    testCompile('org.springframework.security:spirng-security-test')
-
-
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile("org.springframework.security:spring-security-test")
 }
