@@ -17,6 +17,7 @@
             {{^userName}}
                 <!--머스테치에서 기본적으로 제공하는 로그인 url, 별도의 컨트롤러를 만들 필요 없음-->
                 <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
+                <!--네이버 로그인 url은 application-oauth.properties에 등록한 redirect_uri_template값에 맞춰 작동-->
                 <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>
             {{/userName}}
         </div>
