@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.remme.springboot.config.auth.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-29T06:42:24" hostname="DESKTOP-9JJ15A7" time="0.219">
-  <properties/>
-  <testcase name="롬북_기능_테스트" classname="com.remme.springboot.config.auth.dto.HelloResponseDtoTest" time="0.219"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

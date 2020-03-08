@@ -52,5 +52,7 @@ dependencies {
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
     // 스프링 시큐리티 테스트를 위한 여러 도구를 지원하는 spring-security-test를 추가한다
-    // testCompile('org.springframework.security:spirng-security-test')
+    testCompile('org.springframework.security:spirng-security-test')
+
+
 }
