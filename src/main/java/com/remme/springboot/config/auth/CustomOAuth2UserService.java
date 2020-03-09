@@ -1,5 +1,6 @@
 package com.remme.springboot.config.auth;
 
+
 import com.remme.springboot.config.auth.dto.OAuthAttributes;
 import com.remme.springboot.config.auth.dto.SessionUser;
 import com.remme.springboot.domain.user.User;
@@ -34,6 +35,8 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
         String userNameAttributeName = userRequest.getClientRegistration().getProviderDetails()
                 // OAuth2 로그인 진행 시 키가 되는 필드값을 말한다. 구글의 경우 기본적으로 코드를 지원하지만 카카오 네이버 등은 지원x
                 .getUserInfoEndpoint().getUserNameAttributeName();
+
+
 
         // OAuth2UserService를 통해 가져온 어트리뷰트를 담을 클래스
         OAuthAttributes attributes = OAuthAttributes.of(registrationId, userNameAttributeName, oAuth2User.getAttributes());
