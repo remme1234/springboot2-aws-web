@@ -50,6 +50,7 @@ dependencies {
     // 스프링 세션 jdbc 등록
     compile('org.springframework.session:spring-session-jdbc')
 
+    // mariaDB 드라이버 설정
     compile("org.mariadb.jdbc:mariadb-java-client")
 
     // 스프링 시큐리티 테스트를 위한 여러 도구를 지원하는 spring-security-test를 추가한다
